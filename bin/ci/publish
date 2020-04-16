@@ -1,0 +1,9 @@
+#!/bin/bash --login
+
+set -e
+
+rm -rf pkg
+bundle exec rake build
+bundle exec gem inabox --host http://gems.vericity.net pkg/*.gem
+bundle exec rake tag
+
