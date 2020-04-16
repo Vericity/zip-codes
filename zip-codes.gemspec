@@ -12,7 +12,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://git.vericity.net/flash/zip-codes'
 
   spec.files         = `git ls-files`.split($RS)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
